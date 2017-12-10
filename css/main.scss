@@ -1,0 +1,68 @@
+body {
+  background: #dedede;
+}
+
+.container {
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.hero {
+  padding-top: 5px;
+  border-radius: 3px;
+}
+section#contact {
+  background: #dedede;
+  padding-top: 25px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* Media Queries */
+
+@media (min-width: 750px) { /* Wider than 750px? Use these, fool. */
+  .img-responsive {
+    width: 50%;
+    height: auto;
+  }
+
+  .hero {
+    width: 75%;
+  }
+
+  .left {
+    float: left;
+    width: 45%;
+    text-align: left;
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+    text-align: left;
+  }
+
+  section#contact {
+    clear: both;
+  }
+}
